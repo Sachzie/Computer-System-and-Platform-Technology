@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light;
+  color: #172d13;
+  background-color: #F5F7F5; /* Very light green tint */
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  min-width: 320px;
+  min-height: 100vh;
+  /* Updated gradient with new palette: #172d13, #d76f30, #6bb77b */
+  background: 
+    radial-gradient(at 0% 0%, rgba(107, 183, 123, 0.15) 0, transparent 50%), 
+    radial-gradient(at 50% 0%, rgba(215, 111, 48, 0.1) 0, transparent 50%), 
+    radial-gradient(at 100% 0%, rgba(23, 45, 19, 0.05) 0, transparent 50%);
+  background-color: #F5F7F5;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#root {
+  width: 100%;
+}
+
+/* Glassmorphism Utilities - Adjusted for Light Mode */
+.glass-card {
+  background: rgba(255, 255, 255, 0.6); 
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  box-shadow: 0 8px 32px 0 rgba(23, 45, 19, 0.05);
+  color: #172d13;
+}
+
+.glass-card-hover {
+  transition: all 0.3s ease;
+}
+
+.glass-card-hover:hover {
+  background: rgba(255, 255, 255, 0.85);
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px 0 rgba(23, 45, 19, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+}
+
+.glass-navbar {
+  background: rgba(255, 255, 255, 0.75) !important;
+  backdrop-filter: blur(16px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.6) !important;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05) !important;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F5F7F5; 
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #6bb77b; 
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #d76f30; 
+}

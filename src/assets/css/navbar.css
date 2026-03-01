@@ -1,0 +1,124 @@
+:root {
+  --primary-color: #d76f30;     /* New Orange */
+  --secondary-color: #6bb77b;   /* New Light Green */
+  --background-color: rgba(255, 255, 255, 0.7);  /* Navbar background */
+  --surface-color: rgba(255, 255, 255, 0.4);     /* Light Background */
+  --text-color: #172d13;        /* New Dark Green Text */
+  --muted-text: rgba(23, 45, 19, 0.7);
+  --navbar-height: 72px;
+  --border-radius: 20px;
+}
+
+/* Navbar shell - transparent wrapper */
+.navbar {
+  background-color: transparent; /* Changed from variable to transparent */
+  height: var(--navbar-height);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 20px; /* Floating from top */
+  z-index: 1000;
+  border-bottom: none; /* Removed border */
+  backdrop-filter: none; /* Removed backdrop filter from wrapper */
+  padding: 0 20px; /* Add some padding so it doesn't touch edges on small screens */
+  pointer-events: none; /* Allow clicks to pass through the empty space around the navbar */
+}
+
+/* Inner container - the actual floating pill */
+.navbar-container {
+  display: flex;
+  justify-content: center; /* Center the content */
+  align-items: center;
+  width: auto; /* Allow it to shrink to fit content, or use a specific width */
+  min-width: 600px; /* Minimum width to hold items comfortably */
+  max-width: 90%; /* Responsive max width */
+  padding: 12px 32px; /* Increased padding for pill shape */
+  background: rgba(255, 255, 255, 0.75); /* Lighter Glass effect */
+  border-radius: 50px; /* Pill shape */
+  box-shadow: 0 8px 32px 0 rgba(23, 45, 19, 0.08); /* Soft shadow */
+  backdrop-filter: blur(20px); /* Blur effect inside the pill */
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  pointer-events: auto; /* Re-enable pointer events */
+  position: relative; /* For absolute positioning of children */
+}
+
+/* Logo */
+.navbar-logo {
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  letter-spacing: -0.5px;
+  color: var(--primary-color);
+  position: absolute; /* Position logo absolutely to the left */
+  left: 32px;
+}
+
+.logo-bin {
+  color: #172d13; /* Dark text for logo on light glass */
+}
+
+/* Menu toggle (mobile) */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #172d13;
+  padding: 6px;
+  position: absolute;
+  right: 32px; /* Position toggle absolutely to the right */
+}
+
+/* Desktop menu */
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 28px;
+  /* Centered by the flex container justification */
+}
+
+/* Override MUI button styles for navbar context */
+.navbar-menu .MuiButton-root {
+  text-transform: none;
+  font-size: 1rem;
+  padding: 6px 16px;
+  border-radius: 20px;
+  color: #172d13 !important; /* Force dark text */
+  font-weight: 500;
+}
+
+.navbar-menu .MuiButton-root:hover {
+  background-color: rgba(215, 111, 48, 0.1); /* Subtle primary color hover */
+  color: var(--primary-color) !important;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .navbar-container {
+    min-width: 90%;
+    padding: 12px 20px;
+    justify-content: center; /* Keep centered layout */
+  }
+
+  .navbar-logo {
+    position: static; /* Reset position for mobile flow if needed, or keep absolute */
+    margin-right: auto; /* Push to left if flex */
+  }
+
+  .menu-toggle {
+    display: block;
+    position: static; /* Reset position */
+  }
+
+  /* Hide desktop menu on mobile, or implement drawer/dropdown */
+  .navbar-menu {
+    display: none; /* For now, hiding as per previous logic which had a mobile menu toggle state */
+  }
+}
