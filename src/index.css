@@ -6,8 +6,8 @@
   font-weight: 400;
 
   color-scheme: light;
-  color: #172d13;
-  background-color: #F5F7F5; /* Very light green tint */
+  color: #3a3143;
+  background-color: #FFF1E2;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -20,12 +20,12 @@ body {
   display: flex;
   min-width: 320px;
   min-height: 100vh;
-  /* Updated gradient with new palette: #172d13, #d76f30, #6bb77b */
   background: 
-    radial-gradient(at 0% 0%, rgba(107, 183, 123, 0.15) 0, transparent 50%), 
-    radial-gradient(at 50% 0%, rgba(215, 111, 48, 0.1) 0, transparent 50%), 
-    radial-gradient(at 100% 0%, rgba(23, 45, 19, 0.05) 0, transparent 50%);
-  background-color: #F5F7F5;
+    radial-gradient(at 0% 0%, rgba(255, 218, 179, 0.45) 0, transparent 50%),
+    radial-gradient(at 50% 0%, rgba(200, 170, 170, 0.24) 0, transparent 50%),
+    radial-gradient(at 100% 0%, rgba(159, 131, 131, 0.16) 0, transparent 50%),
+    linear-gradient(180deg, #FFF6ED 0%, #FFE9D7 100%);
+  background-color: #FFF1E2;
   background-attachment: fixed;
   background-size: cover;
 }
@@ -36,12 +36,12 @@ body {
 
 /* Glassmorphism Utilities - Adjusted for Light Mode */
 .glass-card {
-  background: rgba(255, 255, 255, 0.6); 
+  background: rgba(255, 255, 255, 0.62);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.7);
-  box-shadow: 0 8px 32px 0 rgba(23, 45, 19, 0.05);
-  color: #172d13;
+  border: 1px solid rgba(159, 131, 131, 0.22);
+  box-shadow: 0 8px 32px 0 rgba(87, 73, 100, 0.12);
+  color: #574964;
 }
 
 .glass-card-hover {
@@ -51,8 +51,8 @@ body {
 .glass-card-hover:hover {
   background: rgba(255, 255, 255, 0.85);
   transform: translateY(-5px);
-  box-shadow: 0 12px 40px 0 rgba(23, 45, 19, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.9);
+  box-shadow: 0 12px 40px 0 rgba(87, 73, 100, 0.16);
+  border: 1px solid rgba(159, 131, 131, 0.28);
 }
 
 .glass-navbar {
@@ -68,14 +68,14 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #F5F7F5; 
+  background: #FFF1E2; 
 }
  
 ::-webkit-scrollbar-thumb {
-  background: #6bb77b; 
+  background: #9F8383; 
   border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #d76f30; 
+  background: #3a3143; 
 }

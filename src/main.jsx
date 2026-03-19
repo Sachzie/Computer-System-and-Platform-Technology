@@ -12,41 +12,41 @@ const theme = createTheme({
     fontFamily: 'Inter, sans-serif',
   },
   palette: {
-    mode: 'light', // Back to light mode
+    mode: 'light',
     primary: {
-      main: '#d76f30', // New Orange
+      main: '#9F8383',
     },
     secondary: {
-      main: '#6bb77b', // New Light Green
+      main: '#3a3143',
     },
     background: {
-      default: 'transparent', // Let CSS background show through
-      paper: 'rgba(255, 255, 255, 0.6)', // Semi-transparent white for cards
+      default: 'transparent',
+      paper: 'rgba(255, 218, 179, 0.22)',
     },
     text: {
-      primary: '#172d13', // New Dark Green Text
-      secondary: 'rgba(23, 45, 19, 0.6)',
+      primary: '#574964',
+      secondary: 'rgba(87, 73, 100, 0.72)',
     },
     custom: {
-      beige: '#F5F7F5',
+      beige: '#FFF1E2',
     }
   },
   components: {
     MuiCssBaseline: {
       styleOverrides: {
         body: {
-          backgroundColor: 'transparent', // Ensure body is transparent for gradient
+          backgroundColor: 'transparent',
         },
       },
     },
     MuiCard: {
       styleOverrides: {
         root: {
-          background: 'rgba(255, 255, 255, 0.6)',
+          background: 'rgba(255, 255, 255, 0.62)',
           backdropFilter: 'blur(20px)',
-          border: '1px solid rgba(255, 255, 255, 0.7)',
-          boxShadow: '0 8px 32px 0 rgba(23, 45, 19, 0.05)',
-          color: '#172d13',
+          border: '1px solid rgba(159, 131, 131, 0.22)',
+          boxShadow: '0 8px 32px 0 rgba(87, 73, 100, 0.12)',
+          color: '#574964',
         }
       }
     },
@@ -65,7 +65,7 @@ const theme = createTheme({
           fontWeight: 600,
         },
         contained: {
-          boxShadow: '0 4px 14px 0 rgba(215, 111, 48, 0.3)',
+          boxShadow: '0 4px 14px 0 rgba(159, 131, 131, 0.28)',
         }
       }
     }
@@ -76,7 +76,7 @@ createRoot(document.getElementById('root')).render(
   <StrictMode>
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <BrowserRouter>
+      <BrowserRouter basename={import.meta.env.BASE_URL}>
         <App />
       </BrowserRouter>
     </ThemeProvider>

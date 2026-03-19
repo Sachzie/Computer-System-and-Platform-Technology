@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Routes, Route, Link, useParams } from 'react-router-dom';
+import { Routes, Route, Link, Navigate, useLocation, useParams } from 'react-router-dom';
 import {
   Typography,
   Button,
@@ -73,7 +73,17 @@ const moduleData = {
   3: {
     title: "Data Formats",
     description: "Boolean algebra, logic gates, and digital circuit design.",
-    summary: "Focuses on data formats including text (ASCII, Unicode), images, audio, and video representation. It also touches on Boolean algebra and logic gates as the foundation of digital circuits.",
+    summary: `The presentation explains what data formats are and why they are important in modern technology. A data format is a structured way of organizing and storing digital information so that computers and people can easily read, process, and exchange it. Data formats make it possible for different systems, applications, and devices to communicate with each other efficiently. Without standardized formats, transferring and understanding data across platforms would be very difficult.
+ 
+ The report also discusses the history of data formats, starting from early mechanical systems such as punched cards and paper tapes used in the 1800s and early computing era. As technology advanced, magnetic tapes and early binary formats were introduced, allowing faster and more efficient storage of data. Later, standardized formats like ASCII, CSV, HTML, and XML were developed to improve compatibility and organization of information. These developments helped computers exchange data more easily and became the foundation of modern digital communication.
+ 
+ The presentation then explains modern data formats used in today’s technology. Some formats are text-based, such as JSON, XML, YAML, and CSV, which are easy for humans to read and widely used in web development and data exchange. Other formats are binary-based like Protocol Buffers, Avro, and MessagePack, which are optimized for speed and smaller file sizes. Columnar formats such as Parquet and ORC are designed for big data analytics and large-scale processing. Each format serves different purposes depending on performance, storage efficiency, and system requirements.
+ 
+ Another part of the presentation highlights real-world applications of data formats. They are used in web development for APIs and communication between servers and websites, in mobile applications for faster data transfer, in data science for analyzing massive datasets, and in IoT devices that rely on lightweight communication. These examples show how important data formats are in everyday technologies and digital systems.
+ 
+ The report also discusses challenges in using data formats, such as compatibility between old and new systems, performance trade-offs, security risks, and managing changes in data structure. Developers must carefully choose the appropriate format depending on the needs of the system. Addressing these challenges is necessary to maintain efficient, reliable, and secure data processing.
+ 
+ Finally, the presentation looks at the future of data formats. New technologies aim to create formats that are more flexible, energy-efficient, and capable of supporting artificial intelligence and large-scale data systems. Future formats may also include self-describing information that makes data easier to understand and share. Overall, the evolution of data formats continues as technology advances and the demand for faster and smarter data processing grows.`,
     pptUrl: "",
     videoUrl: "",
     members: [
@@ -114,9 +124,12 @@ const moduleData = {
   6: {
     title: "Database Platforms",
     description: "I/O devices, interfaces, interrupts, and DMA.",
-    summary: "Deep dive into database platforms, SQL vs NoSQL, and how data is stored, retrieved, and managed in modern applications.",
-    pptUrl: "",
-    videoUrl: "",
+    summary: `A database platform is a software environment designed to manage both structured and unstructured data efficiently. It ensures that data remains accurate, consistent, secure, and accessible at all times. These platforms are essential for organizations and applications because they enable fast data processing and reliable storage of information. By providing a stable and organized system for handling data, database platforms support daily operations and long-term decision-making processes.
+ Database platforms play a vital role in supporting business operations and digital systems. They are responsible for storing and organizing large volumes of data while maintaining data integrity and consistency. In addition, they provide secure access to protect sensitive information and allow multiple users and applications to access data simultaneously. Through these core functions, organizations can rely on accurate and well-managed information to guide their strategies and improve overall efficiency.
+ Modern database platforms integrate advanced technologies to enhance performance and reliability. Cloud computing allows scalable and remote data storage, making systems more flexible and accessible. Distributed systems spread data across multiple servers to improve speed and reduce the risk of system failure. Data replication creates copies of information to ensure availability during technical issues, while encryption safeguards data from unauthorized access. These innovations significantly improve system availability, fault tolerance, and security, enabling database platforms to support large numbers of users effectively.
+ Furthermore, different types of modern databases are designed to address specific needs and use cases. Graph databases are ideal for managing relationship-heavy data such as social networks and recommendation systems. Time-series databases are commonly used for IoT sensors, monitoring systems, and financial data tracking where information is recorded over time. Vector databases, on the other hand, are designed to handle AI and machine learning embeddings, supporting semantic search and advanced data analysis. Together, these specialized databases demonstrate how database platforms continue to evolve in response to emerging technologies and complex data requirements.`,
+    pptUrl: "https://docs.google.com/presentation/d/1yYJtpuThOhCCNhX2hR63XLacdXxbjHwU/edit?usp=drive_web&ouid=116426902229173965274&rtpof=true",
+    videoUrl: "https://youtu.be/DonS5XkHzf0",
     members: [
       { name: 'ADORA, JOENABELLE', role: 'Member' },
       { name: 'TAPIT, CHRISTIAN EARL', role: 'Member' },
@@ -140,20 +153,23 @@ const moduleData = {
   8: {
     title: "Application Platforms",
     description: "File organization, directories, and storage management.",
-    summary: "Explores application platforms, middleware, and runtime environments. Discusses how applications are deployed and managed.",
-    pptUrl: "",
-    videoUrl: "",
+    summary: `Application platforms are environments that provide the necessary tools, infrastructure, and services for developing and running software applications. In the early stages of computing, platforms were based on centralized mainframes and standalone systems where all processing occurred on a single machine. During the 1990s, client-server architecture became dominant, allowing clients to handle user interfaces while servers managed databases and core processing.
+ In the 2000s, web-based platforms transformed the industry by enabling applications to run through browsers, reducing the need for local installations and simplifying updates. The 2010s introduced cloud and mobile platforms, allowing users to access applications anytime through smartphones and internet-connected devices. This period marked a major shift from desktop-based systems to web and mobile applications.
+ Mobile platforms such as Android and iOS expanded the reach of applications, making them more accessible and portable. At the same time, cloud computing and virtualization allowed multiple virtual systems to operate on shared physical hardware, improving efficiency and scalability. This led to the rise of Platform-as-a-Service (PaaS), where developers can build and deploy applications without managing servers directly.
+ Today, major cloud platforms such as Amazon Web Services, Microsoft Azure, and Google Cloud provide powerful infrastructure and services for modern applications. Application platforms are widely used in business systems like Enterprise Resource Planning (ERP) and Customer Relationship Management (CRM). They also support mobile apps for banking, social media, and e-commerce, as well as web applications for online learning and streaming services. In addition, enterprise and government systems rely on robust application platforms to ensure security, scalability, and efficient service delivery.`,
+    pptUrl: "https://docs.google.com/presentation/d/17WIIe-xxR44bzy4rCWmiLyXIlggflql2/edit?usp=drive_web&ouid=116426902229173965274&rtpof=true",
+    videoUrl: "https://youtu.be/o0yxvAvC27o",
     members: [
       { name: 'DUQUE, RAEDEN JAN', role: 'Member' },
-      { name: 'Student D', role: 'Member' },
+      { name: 'YEBES, KIM JENSEN', role: 'Member' },
     ]
   },
   9: {
     title: "Web Platforms",
     description: "OSI model, TCP/IP, and basic networking concepts.",
-    summary: "Focuses on web technologies, client-server architecture, HTTP/HTTPS, and modern web development frameworks.",
+    summary: `The presentation provides a comprehensive overview of web platforms, tracing their evolution from Web 1.0 to Web 3.0 while explaining the technologies, applications, challenges, and future trends shaping the modern internet. It begins with Web 1.0, the “read-only” era characterized by static HTML pages, limited interactivity, and content consumption similar to digital brochures. It then transitions to Web 2.0, the “read-write” web, which introduced dynamic content, user-generated platforms, social media, blogs, and collaboration through technologies like AJAX, enabling asynchronous updates without reloading pages. The discussion progresses to Web 3.0, the “read-write-own” era, focused on decentralization, blockchain technology, cryptocurrencies, NFTs, dApps, AI, and the Semantic Web, where users gain greater control over their data, identity, and digital assets. The presentation also explains the modern web development stack, including frontend technologies such as HTML5, CSS3, JavaScript (ES6+), and frameworks like React, Vue, and Angular, as well as backend technologies like Node.js, Python (Django/Flask), PHP (Laravel), Java (Spring Boot), relational and non-relational databases (MySQL, PostgreSQL, MongoDB), and APIs such as REST and GraphQL. It further covers infrastructure and deployment concepts including cloud computing (AWS, Google Cloud, Azure), containerization with Docker and Kubernetes, and architectural approaches like monolithic and microservices systems. Modern web application models such as SPAs, PWAs, and SSR are also highlighted. Additionally, the presentation addresses major challenges in web platforms—security and data privacy, scalability and performance, and accessibility and inclusivity—along with their solutions, such as HTTPS, multi-factor authentication, cloud scaling, CDNs, WCAG standards, and responsive design. Finally, it explores future trends like Artificial Intelligence and Progressive Web Apps, emphasizing continuous learning, user-centered design, and strong cybersecurity as essential strategies for preparing for the future of web development.`,
     pptUrl: "",
-    videoUrl: "",
+    videoUrl: "https://youtu.be/6A0INQXpsbI",
     members: [
       { name: 'MALLO, GLENN HENRY', role: 'Member' },
       { name: 'CRUZ, HANNA CLERDEE', role: 'Member' },
@@ -181,7 +197,8 @@ const moduleData = {
   11: {
     title: "Media Platforms",
     description: "Threats, vulnerabilities, cryptography, and security protocols.",
-    summary: "Explores digital media platforms, streaming technologies, codecs, and content delivery networks (CDNs).",
+    summary: `Media platforms have significantly evolved from traditional forms of communication such as print, radio, and television to highly interactive digital platforms powered by the internet. The shift to online media in the 1990s and the rise of social media in the 2000s transformed users from passive audiences into active content creators. Today, modern media platforms use advanced technologies such as cloud computing, Artificial Intelligence (AI), machine learning, big data analytics, 5G, and mobile technologies to provide fast, personalized, and real-time content delivery. Emerging technologies like augmented reality (AR) and virtual reality (VR) are also enhancing user experiences through immersive environments.
+ Media platforms are widely applied in communication, education, business, marketing, entertainment, and news dissemination. They enable instant messaging, online learning, digital advertising, live streaming, and global information sharing. Despite their benefits, they face major challenges including misinformation, fake news, content moderation difficulties, privacy and data security risks, algorithm bias, and declining user trust. Looking ahead, future trends focus on stronger AI integration, more personalized and interactive content, improved data privacy measures, short-form media growth, immersive VR/AR experiences, and subscription-based models that reduce reliance on advertisements.`,
     pptUrl: "https://docs.google.com/presentation/d/1aoTPcyhFRGVnIuvlCZAo15xoaqE8GZ-4/edit?rtpof=true",
     videoUrl: "https://youtu.be/HcGnzYbNLqc",
     members: [
@@ -192,9 +209,17 @@ const moduleData = {
   12: {
     title: "Analytics",
     description: "Metrics, benchmarking, and system optimization techniques.",
-    summary: "Introduction to data analytics platforms, big data technologies, and tools for business intelligence and data visualization.",
+    summary: `Analytics refers to the process of examining data to gain insights, support decision-making, and improve performance. It has evolved from simple data processing in the 1960s using mainframe computers to today’s advanced, AI-driven systems that provide real-time insights and predictive capabilities.
+ 
+ Modern analytics uses cloud platforms like Amazon Web Services, Microsoft Azure, and Google Cloud Platform, along with Big Data frameworks such as Apache Spark and Hadoop. Data visualization tools like Tableau and Power BI help present complex information through interactive dashboards.
+ 
+ Analytics is widely applied in business, education, healthcare, transportation, and IT systems. It enables sales forecasting, fraud detection, student performance monitoring, disease prediction, and system optimization.
+ 
+ Despite its benefits, analytics faces challenges such as data quality issues, security and privacy risks, scalability concerns, and high implementation costs.
+ 
+ Looking ahead, future trends include augmented analytics, edge analytics, explainable AI, self-service tools, and ethical data practices — all aimed at making analytics smarter, faster, and more accessible.`,
     pptUrl: "https://docs.google.com/presentation/d/1BxPHWWpocOyVfuRfAlGhJetT6BHgYlRs/edit?usp=drive_web&ouid=116426902229173965274&rtpof=true",
-    videoUrl: "",
+    videoUrl: "https://youtu.be/N36iYd9F8bc",
     members: [
       { name: 'BORJA, VINCENT', role: 'Member' },
       { name: 'ARNADO, ARISTHEA LYN', role: 'Member' },
@@ -203,7 +228,11 @@ const moduleData = {
   13: {
     title: "Artificial Intelligence",
     description: "Multicore processors, GPU computing, and parallel algorithms.",
-    summary: "Covers AI platforms, machine learning frameworks (TensorFlow, PyTorch), and the hardware acceleration required for AI workloads.",
+    summary: `Artificial Intelligence (AI) refers to computer systems designed to perform tasks that typically require human intelligence, including learning, reasoning, problem-solving, language understanding, and image recognition. The concept emerged in the 1950s, with foundational ideas from Alan Turing, who proposed that machines could simulate human intelligence and introduced the Turing Test. AI development has progressed through periods of advancement and setbacks, accelerating significantly due to improvements in computing power, data availability, and algorithms.
+ 
+ Modern AI includes Machine Learning, Deep Learning, Natural Language Processing, and Computer Vision, enabling applications such as virtual assistants, recommendation systems, facial recognition, autonomous vehicles, healthcare diagnostics, and smart devices. These technologies improve efficiency, automate tasks, enhance accuracy, and support innovation across industries.
+ 
+ Despite its growth, AI faces challenges such as data privacy concerns, high energy consumption, security risks, misuse, limited general intelligence, and regulatory issues. Future directions include advanced and multimodal AI systems, greater human–AI collaboration, robotics integration, edge AI, explainable and ethical AI, personalized systems, sustainable development, and continued progress toward more capable intelligent systems.`,
     pptUrl: "https://docs.google.com/presentation/d/1DPQaglsdUszdvzeNH2nQXh5lEQE0_AhF/edit?usp=drive_web&ouid=116426902229173965274&rtpof=true",
     videoUrl: "https://youtu.be/-Ras8cjT_d4",
     members: [
@@ -214,9 +243,21 @@ const moduleData = {
   14: {
     title: "Security",
     description: "Microcontrollers, real-time systems, and IoT applications.",
-    summary: "Focuses on system security, firewalls, encryption, identity management, and best practices for securing platforms.",
-    pptUrl: "",
-    videoUrl: "",
+    summary: `Security in computer systems and platform technologies focuses on protecting data, systems, and infrastructure from unauthorized access, attacks, and damage. At its core is the CIA Triad—confidentiality, integrity, and availability—which ensures that information is kept private, accurate, and accessible when needed.
+ 
+ The field covers multiple layers of protection. Operating system security ensures proper user access, permissions, and system updates, while network security protects data in transit using tools like firewalls, VPNs, and secure protocols. At the infrastructure level, platform security includes cloud environments, virtualization, containers, and DevSecOps practices to secure modern deployments.
+ 
+ Cryptography plays a vital role by securing data through encryption, hashing, and digital signatures. Meanwhile, access control models such as DAC, MAC, RBAC, and ABAC regulate who can access resources and under what conditions.
+ 
+ On the application side, application security addresses common vulnerabilities like SQL injection and XSS through secure coding and input validation. These are supported by secure system architecture principles like defense in depth, least privilege, and zero trust, which minimize risk across systems.
+ 
+ In modern environments, cloud and web security emphasizes identity management, multi-factor authentication, and API protection. At the organizational level, governance, risk, and compliance (GRC) frameworks guide policies, standards, and legal requirements to maintain security and accountability.
+ 
+ Additionally, understanding malware and cyber threats—such as ransomware, phishing, and zero-day attacks—is essential for defense. This is complemented by security testing and monitoring, including penetration testing, vulnerability scanning, and SIEM systems, to detect and respond to threats effectively.
+ 
+ Finally, the field continues to evolve with emerging technologies like AI, IoT, blockchain, and quantum cryptography, introducing new challenges and opportunities in cybersecurity.`,
+    pptUrl: "https://docs.google.com/presentation/d/1UxWcA_imJ4ZDz1EsIhJyFvgnoryaA-jN/edit?usp=drive_web&ouid=116426902229173965274&rtpof=true",
+    videoUrl: "https://youtu.be/c90CJnZPhjo",
     members: [
       { name: 'ILAGAN, SACHZIE SOFIA', role: 'Member' },
       { name: 'SACAY, MARIA ALYSSHA', role: 'Member' },
@@ -225,9 +266,13 @@ const moduleData = {
   15: {
     title: "IoT",
     description: "AWS, Azure, Google Cloud, and virtualization technologies.",
-    summary: "Internet of Things (IoT) platforms, protocols (MQTT, CoAP), and the ecosystem of connected devices.",
+    summary: `The Internet of Things (IoT) is a network of physical devices embedded with sensors and software that connect to the internet to collect and exchange data, turning everyday objects into “smart” devices. The concept began in 1982 with an internet-connected Coca-Cola machine at Carnegie Mellon University, was later named by Kevin Ashton in 1999, and has since grown to include billions of connected devices worldwide.
+ 
+ IoT relies on sensors, cloud computing, connectivity technologies like Wi-Fi and 5G, and Artificial Intelligence to analyze data and enable automated decisions. It powers smart homes, wearable health devices, industrial automation (IIoT), smart cities, agriculture systems, and medical technologies (IoMT).
+ 
+ Despite rapid growth, IoT faces challenges such as security and privacy risks, device compatibility issues, massive data management demands, and energy consumption. The future of IoT focuses on AI integration (AIoT), edge computing for faster processing, and advanced networks like 5G and 6G to support real-time applications such as autonomous vehicles and remote healthcare.`,
     pptUrl: "",
-    videoUrl: "",
+    videoUrl: ["https://youtu.be/JwcS-wmlbSU","https://youtu.be/vdyV_OKjQxA"],
     members: [
       { name: 'BILLONED, EVEN LLOYD', role: 'Member' },
       { name: 'EGO, IANZAE RYAN', role: 'Member' },
@@ -237,7 +282,9 @@ const moduleData = {
   16: {
     title: "Mobile Apps Games Platform",
     description: "Quantum computing, blockchain, and future trends in systems.",
-    summary: "Overview of mobile application development platforms (iOS, Android) and game development engines (Unity, Unreal).",
+    summary: `Game platforms are hardware and software ecosystems built for playing video games, ranging from early arcade machines to modern consoles, PCs, mobile devices, and cloud-based services. Major console platforms include PlayStation 5, Xbox Series X, and Nintendo Switch, while PC gaming is supported by platforms like Steam. Cloud services such as Xbox Cloud Gaming enable streaming without dedicated hardware. Modern game platforms feature advanced graphics, VR integration, and cross-platform multiplayer but face challenges including high development costs, hardware constraints, and monetization concerns. The future points toward cloud streaming, AI-driven experiences, and more seamless, cross-device gameplay.
+ 
+ Mobile apps are software applications designed for smartphones and tablets, distributed mainly through App Store and Google Play. They have evolved from basic utilities into powerful tools that use device hardware like cameras, GPS, and biometric sensors to deliver personalized, real-time services. Mobile apps support industries such as social media, e-commerce, finance, healthcare, productivity, and entertainment. Despite challenges like security risks, device fragmentation, and regulatory compliance, trends include AI integration, augmented reality, super apps, and stronger privacy-focused technologies—making apps increasingly intelligent, immersive, and embedded in everyday life.`,
     pptUrl: "https://docs.google.com/presentation/d/1jJz8ABAKSdxbT2pnyKFOFjnnBpdnr7Kp/edit?slide=id.p1#slide=id.p1",
     videoUrl: ["https://youtu.be/3iRAR_7g7ts", "https://youtu.be/WGH259SYg_4?si=Un_03HdguRiExA7u"],
     members: [
@@ -267,7 +314,7 @@ const ImageSlider = ({ images }) => {
   };
 
   return (
-    <Box sx={{ position: 'relative', width: '100%', height: 400, overflow: 'hidden', borderRadius: 4, boxShadow: '0 8px 32px 0 rgba(23, 45, 19, 0.1)' }}>
+    <Box sx={{ position: 'relative', width: '100%', height: 400, overflow: 'hidden', borderRadius: 4, boxShadow: '0 8px 32px 0 rgba(87, 73, 100, 0.16)' }}>
       {images.map((img, index) => (
         <Box
           key={index}
@@ -288,13 +335,13 @@ const ImageSlider = ({ images }) => {
       {/* Navigation Buttons */}
       <Button 
         onClick={goToPrev} 
-        sx={{ position: 'absolute', top: '50%', left: 10, transform: 'translateY(-50%)', bgcolor: 'rgba(255,255,255,0.3)', backdropFilter: 'blur(5px)', color: '#172d13', minWidth: 'auto', p: 1, borderRadius: '50%', '&:hover': { bgcolor: 'rgba(255,255,255,0.5)' } }}
+        sx={{ position: 'absolute', top: '50%', left: 10, transform: 'translateY(-50%)', bgcolor: 'rgba(255,255,255,0.4)', backdropFilter: 'blur(5px)', color: '#574964', minWidth: 'auto', p: 1, borderRadius: '50%', '&:hover': { bgcolor: 'rgba(255,218,179,0.55)' } }}
       >
         &#10094;
       </Button>
       <Button 
         onClick={goToNext} 
-        sx={{ position: 'absolute', top: '50%', right: 10, transform: 'translateY(-50%)', bgcolor: 'rgba(255,255,255,0.3)', backdropFilter: 'blur(5px)', color: '#172d13', minWidth: 'auto', p: 1, borderRadius: '50%', '&:hover': { bgcolor: 'rgba(255,255,255,0.5)' } }}
+        sx={{ position: 'absolute', top: '50%', right: 10, transform: 'translateY(-50%)', bgcolor: 'rgba(255,255,255,0.4)', backdropFilter: 'blur(5px)', color: '#574964', minWidth: 'auto', p: 1, borderRadius: '50%', '&:hover': { bgcolor: 'rgba(255,218,179,0.55)' } }}
       >
         &#10095;
       </Button>
@@ -304,9 +351,20 @@ const ImageSlider = ({ images }) => {
 
 // ================= HOME PAGE =================
 const HomePage = () => (
-  <Box sx={{ flexGrow: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', minHeight: '80vh' }}>
-    
-    {/* HERO CONTAINER */}
+  <Box
+    component="section"
+    id="home"
+    sx={{
+      flexGrow: 1,
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      justifyContent: 'center',
+      minHeight: '100vh',
+      scrollMarginTop: '120px',
+      py: { xs: 14, md: 18 }
+    }}
+  >
     <Container maxWidth="lg">
       <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
           <Card 
@@ -318,7 +376,7 @@ const HomePage = () => (
               width: '100%',
               textAlign: 'center',
               bgcolor: 'transparent',
-              color: '#172d13'
+              color: '#574964'
             }}
           >
             <CardContent>
@@ -329,9 +387,7 @@ const HomePage = () => (
                 gutterBottom
                 fontWeight="bold"
                 sx={{ 
-                  background: 'linear-gradient(45deg, #d76f30 30%, #6bb77b 90%)',
-                  backgroundClip: 'text',
-                  textFillColor: 'transparent',
+                  color: '#574964',
                   mb: 3
                 }}
               >
@@ -341,7 +397,7 @@ const HomePage = () => (
               <Typography
                 variant="h6"
                 align="center"
-                sx={{ mb: 6, lineHeight: 1.8, color: '#2e4a28' }}
+                sx={{ mb: 6, lineHeight: 1.8, color: '#9F8383' }}
               >
                 Focuses on how computer hardware and system software work together to
                 support modern applications. This subject covers computer
@@ -349,7 +405,6 @@ const HomePage = () => (
                 technologies that enable secure and scalable computing.
               </Typography>
 
-              {/* SECONDARY CTA */}
               <Stack direction="row" spacing={3} justifyContent="center">
                 <Button 
                   size="large" 
@@ -366,7 +421,6 @@ const HomePage = () => (
           </Card>
       </Box>
     </Container>
-
   </Box>
 );
 
@@ -375,10 +429,10 @@ const TopicsPage = () => {
   return (
     <Box sx={{ flexGrow: 1, py: 8 }}>
       <Container maxWidth="xl">
-        <Typography variant="h3" align="center" gutterBottom fontWeight="bold" sx={{ color: '#172d13', mb: 2 }}>
+        <Typography variant="h3" align="center" gutterBottom fontWeight="bold" sx={{ color: '#574964', mb: 2 }}>
           Key Topics
         </Typography>
-        <Typography variant="h6" align="center" sx={{ color: '#4a6b42', mb: 8, maxWidth: '700px', mx: 'auto' }}>
+        <Typography variant="h6" align="center" sx={{ color: '#9F8383', mb: 8, maxWidth: '700px', mx: 'auto' }}>
           Explore the core modules and learning areas designed to build your expertise in computer systems.
         </Typography>
 
@@ -398,15 +452,15 @@ const TopicsPage = () => {
                 }}
               >
                 <CardContent sx={{ flexGrow: 1 }}>
-                  <Chip label={`Module ${card}`} sx={{ mb: 1, bgcolor: 'rgba(215, 111, 48, 0.1)', color: '#d76f30' }} />
-                  <Typography gutterBottom variant="h5" component="div" fontWeight="bold" sx={{ color: '#172d13' }}>
+                  <Chip label={`Module ${card}`} sx={{ mb: 1, bgcolor: 'rgba(255, 218, 179, 0.42)', color: '#9F8383' }} />
+                  <Typography gutterBottom variant="h5" component="div" fontWeight="bold" sx={{ color: '#574964' }}>
                     {moduleData[card]?.title || `Module ${card}`}
                   </Typography>
 
-                  <Chip label="Core" size="small" sx={{ borderColor: '#6bb77b', color: '#6bb77b', bgcolor: 'rgba(107, 183, 123, 0.1)' }} variant="outlined" />
+                  <Chip label="Core" size="small" sx={{ borderColor: '#574964', color: '#574964', bgcolor: 'rgba(87, 73, 100, 0.08)' }} variant="outlined" />
                 </CardContent>
                 <CardActions sx={{ px: 2, pb: 2, pt: 0 }}>
-                   <Button size="small" component={Link} to={`/topics/${card}`} variant="text" sx={{ color: '#6bb77b', fontSize: '0.85rem' }}>Details</Button>
+                   <Button size="small" component={Link} to={`/topics/${card}`} variant="text" sx={{ color: '#9F8383', fontSize: '0.85rem' }}>Details</Button>
                 </CardActions>
               </Card>
             ))}
@@ -427,15 +481,15 @@ const TopicsPage = () => {
                 }}
               >
                  <CardContent sx={{ flexGrow: 1 }}>
-                  <Chip label={`Module ${card}`} sx={{ mb: 1, bgcolor: 'rgba(215, 111, 48, 0.1)', color: '#d76f30' }} />
-                  <Typography gutterBottom variant="h5" component="div" fontWeight="bold" sx={{ color: '#172d13' }}>
+                  <Chip label={`Module ${card}`} sx={{ mb: 1, bgcolor: 'rgba(255, 218, 179, 0.42)', color: '#9F8383' }} />
+                  <Typography gutterBottom variant="h5" component="div" fontWeight="bold" sx={{ color: '#574964' }}>
                     {moduleData[card]?.title || `Module ${card}`}
                   </Typography>
 
-                  <Chip label="Core" size="small" sx={{ borderColor: '#6bb77b', color: '#6bb77b', bgcolor: 'rgba(107, 183, 123, 0.1)' }} variant="outlined" />
+                  <Chip label="Core" size="small" sx={{ borderColor: '#574964', color: '#574964', bgcolor: 'rgba(87, 73, 100, 0.08)' }} variant="outlined" />
                 </CardContent>
                 <CardActions sx={{ px: 2, pb: 2, pt: 0 }}>
-                   <Button size="small" component={Link} to={`/topics/${card}`} variant="text" sx={{ color: '#6bb77b', fontSize: '0.85rem' }}>Details</Button>
+                   <Button size="small" component={Link} to={`/topics/${card}`} variant="text" sx={{ color: '#9F8383', fontSize: '0.85rem' }}>Details</Button>
                 </CardActions>
               </Card>
             ))}
@@ -468,7 +522,7 @@ const renderInlineMarkdown = (s) => {
 const renderMarkdown = (text) => {
   if (!text) return null;
   return text.split(/\n{2,}/).map((para, idx) => (
-    <Typography key={idx} variant="body1" paragraph sx={{ lineHeight: 1.8, color: '#2e4a28' }}>
+    <Typography key={idx} variant="body1" paragraph sx={{ lineHeight: 1.8, color: '#9F8383' }}>
       {renderInlineMarkdown(para)}
     </Typography>
   ));
@@ -544,19 +598,19 @@ const ModuleDetailPage = () => {
   }
 
   return (
-    <Box sx={{ flexGrow: 1, py: 8, minHeight: '100vh', bgcolor: '#F5F7F5' }}>
+    <Box sx={{ flexGrow: 1, py: 8, minHeight: '100vh', bgcolor: '#FFF1E2' }}>
       <Container maxWidth="lg">
-        <Button component={Link} to="/topics" startIcon={<ArrowBackIcon />} sx={{ mb: 4, color: '#6bb77b' }}>
+        <Button component={Link} to="/topics" startIcon={<ArrowBackIcon />} sx={{ mb: 4, color: '#9F8383' }}>
           Back to Topics
         </Button>
         
         {/* Header */}
         <Box sx={{ mb: 6, textAlign: 'center' }}>
-          <Chip label={`Module ${id}`} sx={{ mb: 2, bgcolor: 'rgba(215, 111, 48, 0.1)', color: '#d76f30' }} />
-          <Typography variant="h3" fontWeight="bold" sx={{ color: '#172d13', mb: 2 }}>
+          <Chip label={`Module ${id}`} sx={{ mb: 2, bgcolor: 'rgba(255, 218, 179, 0.42)', color: '#9F8383' }} />
+          <Typography variant="h3" fontWeight="bold" sx={{ color: '#574964', mb: 2 }}>
             {module.title}
           </Typography>
-          <Typography variant="h6" sx={{ color: '#4a6b42', maxWidth: '800px', mx: 'auto' }}>
+          <Typography variant="h6" sx={{ color: '#9F8383', maxWidth: '800px', mx: 'auto' }}>
             {module.description}
           </Typography>
         </Box>
@@ -566,7 +620,7 @@ const ModuleDetailPage = () => {
           <Grid item xs={12} md={8}>
             
             <Paper className="glass-card" sx={{ p: 4, mb: 4, borderRadius: 4, border: 'none', boxShadow: 2 }}>
-              <Typography variant="h5" fontWeight="bold" gutterBottom sx={{ color: '#172d13' }}>
+              <Typography variant="h5" fontWeight="bold" gutterBottom sx={{ color: '#574964' }}>
                 Presentation
               </Typography>
               <Divider sx={{ my: 2 }} />
@@ -595,7 +649,7 @@ const ModuleDetailPage = () => {
             </Paper>
 
              <Paper className="glass-card" sx={{ p: 4, mb: 4, borderRadius: 4, border: 'none', boxShadow: 2 }}>
-              <Typography variant="h5" fontWeight="bold" gutterBottom sx={{ color: '#172d13' }}>
+              <Typography variant="h5" fontWeight="bold" gutterBottom sx={{ color: '#574964' }}>
                 Video Discussion
               </Typography>
               <Divider sx={{ my: 2 }} />
@@ -631,14 +685,14 @@ const ModuleDetailPage = () => {
             </Paper>
 
             <Paper className="glass-card" sx={{ p: 4, mb: 4, borderRadius: 4, border: 'none', boxShadow: 2 }}>
-              <Typography variant="h5" fontWeight="bold" gutterBottom sx={{ color: '#172d13', display: 'flex', alignItems: 'center', gap: 1 }}>
+              <Typography variant="h5" fontWeight="bold" gutterBottom sx={{ color: '#574964', display: 'flex', alignItems: 'center', gap: 1 }}>
                 <StorageIcon color="primary" /> Topic Summary
               </Typography>
               <Divider sx={{ my: 2 }} />
               {module.summary ? (
                 <Box>{renderMarkdown(module.summary)}</Box>
               ) : (
-                <Typography variant="body1" paragraph sx={{ lineHeight: 1.8, color: '#2e4a28' }}>
+                <Typography variant="body1" paragraph sx={{ lineHeight: 1.8, color: '#9F8383' }}>
                   No summary available for this topic yet.
                 </Typography>
               )}
@@ -650,7 +704,7 @@ const ModuleDetailPage = () => {
           <Grid item xs={12} md={4}>
             {/* Group Members */}
             <Paper className="glass-card" sx={{ p: 3, borderRadius: 4, border: 'none', boxShadow: 2, position: 'sticky', top: 24 }}>
-              <Typography variant="h6" fontWeight="bold" gutterBottom sx={{ color: '#6bb77b' }}>
+              <Typography variant="h6" fontWeight="bold" gutterBottom sx={{ color: '#9F8383' }}>
                 Group Members
               </Typography>
               <Divider sx={{ mb: 2 }} />
@@ -658,13 +712,13 @@ const ModuleDetailPage = () => {
                 {module.members && module.members.map((member, index) => (
                   <ListItem key={index} sx={{ px: 0 }}>
                     <ListItemAvatar>
-                      <Avatar sx={{ bgcolor: 'rgba(215, 111, 48, 0.1)', color: '#d76f30' }}>
+                      <Avatar sx={{ bgcolor: 'rgba(255, 218, 179, 0.42)', color: '#9F8383' }}>
                         <PersonIcon />
                       </Avatar>
                     </ListItemAvatar>
                     <ListItemText 
-                      primary={<Typography color="#172d13" fontWeight="500">{member.name}</Typography>} 
-                      secondary={<Typography color="#4a6b42" variant="body2">{member.role}</Typography>} 
+                      primary={<Typography color="#574964" fontWeight="500">{member.name}</Typography>} 
+                      secondary={<Typography color="#9F8383" variant="body2">{member.role}</Typography>} 
                     />
                   </ListItem>
                 ))}
@@ -688,20 +742,24 @@ const AboutPage = () => {
   ];
 
   const team = [
-    { name: 'Dr. Rico S. Santos', role: 'Professor', avatar: 'https://i.pravatar.cc/150?u=jane' },
+    { name: 'Dr. Rico S. Santos', role: 'Professor' },
     
   ];
 
   return (
-    <Box sx={{ minHeight: '100vh', pb: 8 }}>
+    <Box
+      component="section"
+      id="about"
+      sx={{ minHeight: '100vh', pb: 8, scrollMarginTop: '120px', py: { xs: 8, md: 10 } }}
+    >
       <Container maxWidth="lg" sx={{ mt: 6 }}>
         
         {/* Header Section */}
         <Box sx={{ textAlign: 'center', mb: 6 }}>
-          <Typography variant="h3" fontWeight="bold" sx={{ color: '#172d13', mb: 2 }}>
+          <Typography variant="h3" fontWeight="bold" sx={{ color: '#574964', mb: 2 }}>
             About Us
           </Typography>
-          <Typography variant="h6" sx={{ color: '#4a6b42', maxWidth: '700px', mx: 'auto' }}>
+          <Typography variant="h6" sx={{ color: '#9F8383', maxWidth: '700px', mx: 'auto' }}>
 BSIT-NS-3A Students from Technological University of the
  Philippines - Taguig 
 that tackles topics regarding Computer System and Platform Technology   
@@ -716,22 +774,22 @@ that tackles topics regarding Computer System and Platform Technology
 
         {/* Team Section */}
         <Box>
-          <Typography variant="h4" fontWeight="bold" align="center" gutterBottom sx={{ mb: 4, color: '#172d13' }}>
+          <Typography variant="h4" fontWeight="bold" align="center" gutterBottom sx={{ mb: 4, color: '#574964' }}>
             Subject Professor
           </Typography>
           <Grid container spacing={4} justifyContent="center">
             {team.map((member, index) => (
               <Grid item xs={12} sm={6} md={4} key={index}>
                 <Card className="glass-card glass-card-hover" sx={{ borderRadius: 4, textAlign: 'center', p: 3, bgcolor: 'transparent' }}>
-                  <Avatar 
+                  {/* <Avatar 
                     src={member.avatar} 
-                    sx={{ width: 100, height: 100, mx: 'auto', mb: 2, border: '4px solid #6bb77b' }} 
-                  />
+                    sx={{ width: 100, height: 100, mx: 'auto', mb: 2, border: '4px solid #9F8383' }} 
+                  /> */}
                   <Typography variant="h6" fontWeight="bold" color="primary">
                     {member.name}
                   </Typography>
-                  <Chip label={member.role} sx={{ mt: 1, borderColor: '#6bb77b', color: '#6bb77b' }} variant="outlined" size="small" />
-                  <Typography variant="body2" sx={{ mt: 2, color: '#4a6b42' }}>
+                  <Chip label={member.role} sx={{ mt: 1, borderColor: '#9F8383', color: '#9F8383' }} variant="outlined" size="small" />
+                  <Typography variant="body2" sx={{ mt: 2, color: '#9F8383' }}>
                     Dedicated to excellence in education and system research.
                   </Typography>
                 </Card>
@@ -745,15 +803,43 @@ that tackles topics regarding Computer System and Platform Technology
   );
 };
 
+const LandingPage = () => (
+  <Box sx={{ display: 'flex', flexDirection: 'column' }}>
+    <HomePage />
+    <AboutPage />
+  </Box>
+);
+
 // ================= APP =================
 function App() {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.pathname !== '/') return;
+
+    if (location.hash) {
+      const sectionId = location.hash.replace('#', '');
+      const target = document.getElementById(sectionId);
+
+      if (target) {
+        window.requestAnimationFrame(() => {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
+      }
+
+      return;
+    }
+
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, [location.pathname, location.hash]);
+
   return (
     <Box sx={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
       <Navbar />
 
       <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/about" element={<AboutPage />} />
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/about" element={<Navigate to="/#about" replace />} />
         <Route path="/topics" element={<TopicsPage />} />
         <Route path="/topics/:id" element={<ModuleDetailPage />} />
       </Routes>
@@ -767,7 +853,7 @@ function App() {
           <Typography
             variant="body2"
             align="center"
-            sx={{ color: '#4a6b42' }}
+            sx={{ color: '#9F8383' }}
           >
             © {new Date().getFullYear()} All rights reserved.
           </Typography>
