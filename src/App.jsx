@@ -45,7 +45,7 @@ const moduleData = {
  
  From mechanical gears to quantum systems, computer hardware continues to shrink in size while expanding in power—driving innovation and connecting the modern world.`,
     pptUrl: "https://docs.google.com/presentation/d/1zeCFpYGr2kzUJbjRYIEyJRMrFL1R46iy/edit?usp=drive_web&ouid=116426902229173965274&rtpof=true",
-    videoUrl: "https://youtu.be/iUtxbviPGv0?si=vAo0SabKKh1J3QKI",
+    videoUrl: ["https://youtu.be/iUtxbviPGv0?si=vAo0SabKKh1J3QKI", "https://youtu.be/0IoCuyTcUVk"],
     members: [
       { name: 'ACOSTA, GIRONE', role: 'Member' },
       { name: 'TABIGUE, JAY', role: 'Member' },
@@ -188,7 +188,7 @@ const moduleData = {
  
  Finally, the presentation covers the applications of CMS, showing how it is used in website publishing, e-commerce, digital marketing, corporate portals, educational platforms, and multi-platform content distribution. This highlights the importance of CMS in modern digital communication and online business operations.`,
     pptUrl: "https://docs.google.com/presentation/d/1EKeBkwX7etZlKCzzlAlm4HeEYvkE1lkG/edit",
-    videoUrl: "https://youtu.be/ljSIkEDCHOg",
+    videoUrl: ["https://youtu.be/ljSIkEDCHOg", "https://youtube.com/watch?v=0BnUU7l7nXc&si=sKI7lO4lV-sMjdIx"],
     members: [
       { name: 'DANQUE, JOHN MICHAEL', role: 'Member' },
       { name: 'CIPRIANO, YHANSKIE ADRIEL', role: 'Member' },
@@ -276,7 +276,6 @@ const moduleData = {
     members: [
       { name: 'BILLONED, EVEN LLOYD', role: 'Member' },
       { name: 'EGO, IANZAE RYAN', role: 'Member' },
-      { name: 'YEBES, KIM JENSEN', role: 'Member' },
     ]
   },
   16: {
