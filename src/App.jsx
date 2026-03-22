@@ -45,7 +45,7 @@ const moduleData = {
  
  From mechanical gears to quantum systems, computer hardware continues to shrink in size while expanding in power—driving innovation and connecting the modern world.`,
     pptUrl: "https://docs.google.com/presentation/d/1zeCFpYGr2kzUJbjRYIEyJRMrFL1R46iy/edit?usp=drive_web&ouid=116426902229173965274&rtpof=true",
-    videoUrl: ["https://youtu.be/iUtxbviPGv0?si=vAo0SabKKh1J3QKI", "https://youtu.be/0IoCuyTcUVk"],
+    videoUrl: ["https://youtu.be/iUtxbviPGv0?si=vAo0SabKKh1J3QKI", "https://www.youtube.com/watch?v=0IoCuyTcUVk&fbclid=IwY2xjawQsz-VleHRuA2FlbQIxMABicmlkETFQcThhUzBianFGVmFTMExMc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHvEUqEW1UvCYb7kGpuZc9IYTlz7sNeQvCdvb7snPWCmd3TuZ8TMe-6g4pwxF_aem_C42jqWPJybcFlNvaGcBaRA"],
     members: [
       { name: 'ACOSTA, GIRONE', role: 'Member' },
       { name: 'TABIGUE, JAY', role: 'Member' },
@@ -64,7 +64,7 @@ const moduleData = {
  
  From ancient counting methods to quantum possibilities, number systems remain the essential language behind every digital interaction, continuously evolving alongside technology itself.`,
     pptUrl: "https://docs.google.com/presentation/d/14Z0heMUcYozgW8i3kNTLoBos1UgdLu31/edit",
-    videoUrl: ["https://youtu.be/_tFV9jPoxtc"],
+    videoUrl: ["https://youtu.be/_tFV9jPoxtc", "https://youtu.be/wTM8wsxwNRw?si=xDgkeKB2tjDq6yEw"],
     members: [
       { name: 'BUMATAY,AXEL JILLIAN', role: 'Member' },
       { name: 'PENAVERDE, LEVI ASHER', role: 'Member' },
@@ -100,7 +100,7 @@ const moduleData = {
  
  Looking ahead, operating systems are evolving into AI-driven, context-aware platforms with stronger zero-trust security and unified cross-device experiences. No longer just resource managers, future OS platforms aim to be intelligent, secure, energy-efficient, and seamlessly integrated into the digital ecosystem.`,
     pptUrl: "https://docs.google.com/presentation/d/1Rdrk_OgSqzeR1Og7zxvZf2HGkY3PfdPj/edit?slide=id.p1#slide=id.p1",
-    videoUrl: "https://youtu.be/fT7Hbpp8P1k", //ELUMBA
+    videoUrl: ["https://youtu.be/fT7Hbpp8P1k", "https://youtu.be/nadXxWIZ7R8"],
     members: [
       { name: 'ELUMBA, HAZEL ANNE', role: 'Member' },
       { name: 'CORTEZ, DEANNUEL DREW', role: 'Member' },
@@ -115,7 +115,7 @@ const moduleData = {
  
  Today’s platforms include desktops, mobile devices, cloud and edge computing, embedded systems, AI/ML platforms, IoT networks, and high-performance computing. Despite rapid growth, challenges remain—especially in security, cost, performance limits, and energy efficiency—driving innovation toward smarter, more integrated, and sustainable systems.`,
     pptUrl: "https://docs.google.com/presentation/d/1jV-JheiwXcSP2x5FJqE6Evc6spAuKEsR/edit?usp=drive_web&ouid=116426902229173965274&rtpof=true",
-    videoUrl: "",
+    videoUrl: "https://youtu.be/LB9CVmd5GS8",
     members: [
       { name: 'CASAY,DWAYNE', role: 'Member' },
       { name: 'MAGDAYO, ROSE ANNE', role: 'Member' },
@@ -144,7 +144,7 @@ const moduleData = {
  
  Today, storage platforms power AI and machine learning, big data analytics, IoT, edge computing, and cyber-resilient systems. Key trends shaping the future include AI-driven management, cost-optimized storage models, quantum-resistant security, and Storage-as-a-Service (STaaS). As data continues to grow exponentially, storage platforms are becoming more scalable, automated, secure, and integrated—forming the backbone of modern digital infrastructure.`,
     pptUrl: "https://docs.google.com/presentation/d/1jmcF7A8pNcDgblRFQHlLfErEhWGc-IcX/edit",
-    videoUrl: "https://youtu.be/tnZHh8hi02o",
+    videoUrl: ["https://youtu.be/tnZHh8hi02o", "https://www.youtube.com/watch?fbclid=IwY2xjawQsz3VleHRuA2FlbQIxMABicmlkETFQcThhUzBianFGVmFTMExMc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHt4RYmxYw4rqlpHTnCyDWOF_Ci2JrpWw5IbMEiaKiG-YqraewxsHo2jk0NA3_aem_OMWDNUWxkpZA-HwPT5AplQ&v=4e3LxuRPTUQ&feature=youtu.be"],
     members: [
       { name: 'CATUERA, MELVIN', role: 'Member' },
       { name: 'BALUCAN, CASEY ALTHEA', role: 'Member' },
@@ -158,7 +158,7 @@ const moduleData = {
  Mobile platforms such as Android and iOS expanded the reach of applications, making them more accessible and portable. At the same time, cloud computing and virtualization allowed multiple virtual systems to operate on shared physical hardware, improving efficiency and scalability. This led to the rise of Platform-as-a-Service (PaaS), where developers can build and deploy applications without managing servers directly.
  Today, major cloud platforms such as Amazon Web Services, Microsoft Azure, and Google Cloud provide powerful infrastructure and services for modern applications. Application platforms are widely used in business systems like Enterprise Resource Planning (ERP) and Customer Relationship Management (CRM). They also support mobile apps for banking, social media, and e-commerce, as well as web applications for online learning and streaming services. In addition, enterprise and government systems rely on robust application platforms to ensure security, scalability, and efficient service delivery.`,
     pptUrl: "https://docs.google.com/presentation/d/17WIIe-xxR44bzy4rCWmiLyXIlggflql2/edit?usp=drive_web&ouid=116426902229173965274&rtpof=true",
-    videoUrl: "https://youtu.be/o0yxvAvC27o",
+    videoUrl: ["https://youtu.be/o0yxvAvC27o", "https://l.facebook.com/l.php?u=https%3A%2F%2Fyoutu.be%2FrtXg3hB3bEo%3Fsi%3D-4IVoYMJtMi9pQU1%26fbclid%3DIwZXh0bgNhZW0CMTAAYnJpZBExUHE4YVMwYmpxRlZhUzBMTHNydGMGYXBwX2lkEDIyMjAzOTE3ODgyMDA4OTIAAR7xFKhFtVLwmG-5BqbmXPSGE5c-7DXkLwnb2-7Jz1gpnd07mfEzHvuoOKcMRQ_aem_C42jqWPJybcFlNvaGcBaRA&h=AT5HKJPvqyv-x2wrouYuwEKUxtPVmARrrgIPFH2FVOD_c3I2NXgeSoMKhDNZ9-28Jf-9LQ6cjRMptkP3kwDCSztU0nyayRy7wPdmDk-RVwgjTw7mBoVbMw_lY-Y5L5ywVEyTxtbPMl3F9lI"],
     members: [
       { name: 'DUQUE, RAEDEN JAN', role: 'Member' },
       { name: 'YEBES, KIM JENSEN', role: 'Member' },
@@ -200,7 +200,7 @@ const moduleData = {
     summary: `Media platforms have significantly evolved from traditional forms of communication such as print, radio, and television to highly interactive digital platforms powered by the internet. The shift to online media in the 1990s and the rise of social media in the 2000s transformed users from passive audiences into active content creators. Today, modern media platforms use advanced technologies such as cloud computing, Artificial Intelligence (AI), machine learning, big data analytics, 5G, and mobile technologies to provide fast, personalized, and real-time content delivery. Emerging technologies like augmented reality (AR) and virtual reality (VR) are also enhancing user experiences through immersive environments.
  Media platforms are widely applied in communication, education, business, marketing, entertainment, and news dissemination. They enable instant messaging, online learning, digital advertising, live streaming, and global information sharing. Despite their benefits, they face major challenges including misinformation, fake news, content moderation difficulties, privacy and data security risks, algorithm bias, and declining user trust. Looking ahead, future trends focus on stronger AI integration, more personalized and interactive content, improved data privacy measures, short-form media growth, immersive VR/AR experiences, and subscription-based models that reduce reliance on advertisements.`,
     pptUrl: "https://docs.google.com/presentation/d/1aoTPcyhFRGVnIuvlCZAo15xoaqE8GZ-4/edit?rtpof=true",
-    videoUrl: "https://youtu.be/HcGnzYbNLqc",
+    videoUrl: ["https://youtu.be/HcGnzYbNLqc", "https://youtu.be/BWIezQSQwJY"],
     members: [
       { name: 'BUENSUCESO, KATE DIANE ROSS', role: 'Member' },
       { name: 'DADIVAS, JOHN LOUIS', role: 'Member' },
