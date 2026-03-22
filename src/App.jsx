@@ -188,7 +188,7 @@ const moduleData = {
  
  Finally, the presentation covers the applications of CMS, showing how it is used in website publishing, e-commerce, digital marketing, corporate portals, educational platforms, and multi-platform content distribution. This highlights the importance of CMS in modern digital communication and online business operations.`,
     pptUrl: "https://docs.google.com/presentation/d/1EKeBkwX7etZlKCzzlAlm4HeEYvkE1lkG/edit",
-    videoUrl: ["https://youtu.be/ljSIkEDCHOg", "https://youtube.com/watch?v=0BnUU7l7nXc&si=sKI7lO4lV-sMjdIx"],
+    videoUrl: ["https://youtu.be/qVnLrvShvSc", "https://youtube.com/watch?v=0BnUU7l7nXc&si=sKI7lO4lV-sMjdIx"],
     members: [
       { name: 'DANQUE, JOHN MICHAEL', role: 'Member' },
       { name: 'CIPRIANO, YHANSKIE ADRIEL', role: 'Member' },
