@@ -84,8 +84,8 @@ const moduleData = {
  The report also discusses challenges in using data formats, such as compatibility between old and new systems, performance trade-offs, security risks, and managing changes in data structure. Developers must carefully choose the appropriate format depending on the needs of the system. Addressing these challenges is necessary to maintain efficient, reliable, and secure data processing.
  
  Finally, the presentation looks at the future of data formats. New technologies aim to create formats that are more flexible, energy-efficient, and capable of supporting artificial intelligence and large-scale data systems. Future formats may also include self-describing information that makes data easier to understand and share. Overall, the evolution of data formats continues as technology advances and the demand for faster and smarter data processing grows.`,
-    pptUrl: "",
-    videoUrl: "",
+    pptUrl: "https://docs.google.com/presentation/d/1aXnWJugAqO_ecXvuW57s8aq7CTzk879A/edit?usp=drive_web&ouid=116426902229173965274&rtpof=true",
+    videoUrl: ["https://www.youtube.com/watch?v=bJYPL1XPgiY", "https://www.youtube.com/watch?v=vxGb1Y7ucZk" ],
     members: [
       { name: 'VILA, LORD CEDRIC', role: 'Member' },
       { name: 'ANTONIANO, RYAN RUSSELL', role: 'Member' },
@@ -143,7 +143,7 @@ const moduleData = {
  Modern storage technologies include high-speed SSDs with NVMe, network-based systems such as SAN and NAS, object storage for unstructured data, and hybrid cloud environments that combine on-premises and cloud infrastructure. Cloud platforms like Amazon Web Services, Microsoft Azure, and Google Cloud provide scalable, on-demand storage services, while enterprise solutions from Dell EMC and NetApp support large-scale business operations.
  
  Today, storage platforms power AI and machine learning, big data analytics, IoT, edge computing, and cyber-resilient systems. Key trends shaping the future include AI-driven management, cost-optimized storage models, quantum-resistant security, and Storage-as-a-Service (STaaS). As data continues to grow exponentially, storage platforms are becoming more scalable, automated, secure, and integrated—forming the backbone of modern digital infrastructure.`,
-    pptUrl: "",
+    pptUrl: "https://docs.google.com/presentation/d/1jmcF7A8pNcDgblRFQHlLfErEhWGc-IcX/edit",
     videoUrl: "https://youtu.be/tnZHh8hi02o",
     members: [
       { name: 'CATUERA, MELVIN', role: 'Member' },
@@ -168,7 +168,7 @@ const moduleData = {
     title: "Web Platforms",
     description: "OSI model, TCP/IP, and basic networking concepts.",
     summary: `The presentation provides a comprehensive overview of web platforms, tracing their evolution from Web 1.0 to Web 3.0 while explaining the technologies, applications, challenges, and future trends shaping the modern internet. It begins with Web 1.0, the “read-only” era characterized by static HTML pages, limited interactivity, and content consumption similar to digital brochures. It then transitions to Web 2.0, the “read-write” web, which introduced dynamic content, user-generated platforms, social media, blogs, and collaboration through technologies like AJAX, enabling asynchronous updates without reloading pages. The discussion progresses to Web 3.0, the “read-write-own” era, focused on decentralization, blockchain technology, cryptocurrencies, NFTs, dApps, AI, and the Semantic Web, where users gain greater control over their data, identity, and digital assets. The presentation also explains the modern web development stack, including frontend technologies such as HTML5, CSS3, JavaScript (ES6+), and frameworks like React, Vue, and Angular, as well as backend technologies like Node.js, Python (Django/Flask), PHP (Laravel), Java (Spring Boot), relational and non-relational databases (MySQL, PostgreSQL, MongoDB), and APIs such as REST and GraphQL. It further covers infrastructure and deployment concepts including cloud computing (AWS, Google Cloud, Azure), containerization with Docker and Kubernetes, and architectural approaches like monolithic and microservices systems. Modern web application models such as SPAs, PWAs, and SSR are also highlighted. Additionally, the presentation addresses major challenges in web platforms—security and data privacy, scalability and performance, and accessibility and inclusivity—along with their solutions, such as HTTPS, multi-factor authentication, cloud scaling, CDNs, WCAG standards, and responsive design. Finally, it explores future trends like Artificial Intelligence and Progressive Web Apps, emphasizing continuous learning, user-centered design, and strong cybersecurity as essential strategies for preparing for the future of web development.`,
-    pptUrl: "",
+    pptUrl: "https://docs.google.com/presentation/d/1h-FYEHV5Z4_mMrVGVMrIuAD32Otk0uPk/edit?usp=drive_web&ouid=116426902229173965274&rtpof=true",
     videoUrl: "https://youtu.be/6A0INQXpsbI",
     members: [
       { name: 'MALLO, GLENN HENRY', role: 'Member' },
@@ -271,7 +271,7 @@ const moduleData = {
  IoT relies on sensors, cloud computing, connectivity technologies like Wi-Fi and 5G, and Artificial Intelligence to analyze data and enable automated decisions. It powers smart homes, wearable health devices, industrial automation (IIoT), smart cities, agriculture systems, and medical technologies (IoMT).
  
  Despite rapid growth, IoT faces challenges such as security and privacy risks, device compatibility issues, massive data management demands, and energy consumption. The future of IoT focuses on AI integration (AIoT), edge computing for faster processing, and advanced networks like 5G and 6G to support real-time applications such as autonomous vehicles and remote healthcare.`,
-    pptUrl: "",
+    pptUrl: "https://docs.google.com/presentation/d/1oSAL79fio1vp5sZD2fp3A6u5WYfumeXK/edit?usp=drive_web&ouid=116426902229173965274&rtpof=true",
     videoUrl: ["https://youtu.be/JwcS-wmlbSU","https://youtu.be/vdyV_OKjQxA"],
     members: [
       { name: 'BILLONED, EVEN LLOYD', role: 'Member' },
